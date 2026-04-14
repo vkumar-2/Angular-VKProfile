@@ -1,0 +1,54 @@
+/* Global stylesheet */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    /* scroll-behavior: smooth; */
+    font-family: Arial;
+}
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+app-root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+app-header,
+app-main,
+app-footer {
+    display: block;
+    width: 100%;
+}
+app-header {}
+app-main {}
+app-footer {}
+
+/* media queries */
+@media only screen and (max-width: 600px) /* xs */
+{
+}
+@media only screen and (min-width: 600px) /* sm */
+{
+}
+@media only screen and (min-width: 768px) /* md */
+{
+}
+@media only screen and (min-width: 992px) /* lg */
+{
+}
+@media only screen and (min-width: 1200px) /* xl */
+{
+}
+@media only screen and (min-width: 1500px) /* xxl */
+{
+}
+
+/* xray lines */
+.xray-1 {border: 1px dashed black;}
+.xray-2 {border: 2px dashed black;}
+.xray-3 {border: 3px dashed black;}

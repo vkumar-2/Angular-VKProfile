@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+footer {
+    background: linear-gradient(to right, #010016, #05005c);
+    color: white;
+    font-size: 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+footer a {
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+    will-change: transform;
+}
+footer div {
+    margin: 10px 0;
+    padding: 5px 0;
+}
+footer div.links ul {
+    list-style-type: none;
+    display: inline-flex;
+    gap: 30px;
+}
+footer div.links ul li a {
+    text-decoration: none;
+    color: rgb(197, 197, 197);
+    font-size: 1.1rem;
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 255, 255, 0.45);
+    background: rgba(255, 255, 255, 0.04);
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.25), inset 0 0 8px rgba(0, 255, 255, 0.08);
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease,
+        background-color 0.3s ease;
+}
+footer div.links ul li a:hover,
+footer div.links ul li a:focus {
+    color: #ffffff;
+    background: rgba(0, 255, 255, 0.08);
+    border-color: rgba(0, 255, 255, 0.95);
+    transform: translateY(-4px) scale(1.08);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.65);
+    box-shadow:
+        0 0 10px rgba(0, 255, 255, 0.5),
+        0 0 22px rgba(0, 255, 255, 0.35),
+        inset 0 0 10px rgba(0, 255, 255, 0.18);
+    animation: neonPulse 1.2s ease-in-out infinite alternate;
+}
+footer div.links ul li.separator {
+    width: 1px;
+    height: 42px;
+    margin: 0 2px;
+    padding: 0;
+    flex: 0 0 1px;
+    align-self: center;
+    border-right: 1px solid white;
+    list-style-type: none;
+}
+footer div.framework p {
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+footer .framework-label {
+    color: rgba(255, 255, 255, 0.88);
+    letter-spacing: 0.02em;
+}
+footer div.framework p a {
+    text-decoration: none;
+    color: rgb(130, 236, 204);
+    min-height: 42px;
+    padding: 0 20px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 2px solid rgba(0, 255, 255, 0.42);
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.08),
+        rgba(0, 255, 255, 0.05)
+    );
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.2), inset 0 0 10px rgba(255, 255, 255, 0.04);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease,
+        background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+footer div.framework p a::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.06);
+}
+footer div.framework p a:hover,
+footer div.framework p a:focus {
+    color: #ffffff;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.12),
+        rgba(0, 255, 255, 0.1)
+    );
+    border-color: rgba(0, 255, 255, 0.95);
+    transform: translateY(-3px);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.45);
+    box-shadow:
+        0 0 12px rgba(0, 255, 255, 0.45),
+        0 0 24px rgba(0, 255, 255, 0.22),
+        inset 0 0 12px rgba(255, 255, 255, 0.08);
+}
+
+/* animation keyframes */
+@keyframes iconFloat {
+    from {transform: translateY(-2px) scale(1.08);}
+    to {transform: translateY(-6px) scale(1.14);}
+}
+@keyframes neonPulse {
+    from {
+        box-shadow:
+            0 0 8px rgba(0, 255, 255, 0.35),
+            0 0 16px rgba(0, 255, 255, 0.2),
+            inset 0 0 8px rgba(0, 255, 255, 0.1);
+    } 
+    to {
+        box-shadow:
+            0 0 12px rgba(0, 255, 255, 0.7),
+            0 0 28px rgba(0, 255, 255, 0.45),
+            inset 0 0 12px rgba(0, 255, 255, 0.2);
+    }
+}
+
+/* media queries */
+@media only screen and (max-width: 600px) /* xs */
+{
+    footer div.framework p {
+        gap: 8px;
+        justify-content: center;
+    }
+    footer .framework-label {
+        font-size: 20px;
+    }
+    footer div.framework p a {
+        min-height: 38px;
+        padding: 0 14px;
+        font-size: 17px;
+    }
+}
+@media only screen and (min-width: 600px) /* sm */
+{
+}
+@media only screen and (min-width: 768px) /* md */
+{
+    footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 0;
+    }
+    footer div {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    footer div.links ul {
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+    footer div.framework p,
+    footer div p {margin: 0;}
+    footer div.framework,
+    footer div.links,
+    footer div.copyright {min-height: 42px;}
+    footer div.framework .framework-label {font-size: 17px;}
+    footer div.framework p a {font-size: 14px;}
+    footer div.copyright p {font-size: 17px;}
+}
+@media only screen and (min-width: 992px) /* lg */
+{
+    footer div.framework .framework-label {font-size: 20px;}
+    footer div.framework p a {font-size: 17px;}
+    footer div.copyright p {font-size: 20px;}
+}
+@media only screen and (min-width: 1200px) /* xl */
+{
+}
+@media only screen and (min-width: 1500px) /* xxl */
+{
+}
+
+/* google fonts */
+.merienda-500 {
+  font-family: "Merienda", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.caudex-regular {
+  font-family: "Caudex", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.caudex-bold {
+  font-family: "Caudex", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.caudex-regular-italic {
+  font-family: "Caudex", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+.caudex-bold-italic {
+  font-family: "Caudex", serif;
+  font-weight: 700;
+  font-style: italic;
+}

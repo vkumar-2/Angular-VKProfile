@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+header {
+    background: linear-gradient(to right, #010016, #05005c);
+    color: white;
+    font-size: 20px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+#logo-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+#logo-container a {
+    color: white;
+    text-decoration: none;
+}
+#logo-container div#logo {
+    width: 55px;
+    height: 45px;
+    background:
+        radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.08) 18%, transparent 36%),
+        linear-gradient(135deg, #7cf0b0 0%, #58c7d8 38%, #6f7cff 68%, #c86cff 100%);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    box-shadow:
+        inset 0 1px 1px rgba(255, 255, 255, 0.22),
+        inset 0 -8px 14px rgba(0, 0, 0, 0.18),
+        0 4px 10px rgba(0, 0, 0, 0.28),
+        0 0 14px rgba(111, 124, 255, 0.22);
+}
+#logo-container div#logo img {
+    width: 100%; 
+    height: 100%;
+}
+#logo-container a {
+    font-family: "Audiowide", sans-serif;
+    letter-spacing: 3px;
+}
+#navbar ul {display: none;}
+#navbar ul li {
+    list-style-type: none;
+}
+#navbar ul li a {
+    text-decoration: none;
+    color: white;
+}
+#navbar ul li a:hover,
+#navbar ul li a:focus {
+    color: grey;
+    transition: color 0.3s ease;
+}
+#navbar #menu-btn {
+    display: block;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#navbar #menu-btn:hover,
+#navbar #menu-btn:focus {
+    color: grey;
+    transition: color 0.3s ease;
+}
+#menu {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #010016, #05005c);
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+    z-index: 999;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+    transition:
+        max-height 0.35s ease,
+        opacity 0.25s ease,
+        transform 0.35s ease;
+}
+#menu.menu-open {
+    max-height: 320px;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+}
+#menu ul li:last-child {
+    margin-bottom: 0;
+}
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+#menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    
+}
+#menu ul li a:hover,
+#menu ul li a:focus {
+    color: grey;
+    transition: color 0.3s ease;
+}
+#menu-cv-button {
+    border: 1px solid white;
+}
+#cv-link {
+    display: none;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 22px;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #eafcff;
+    font-size: 0.95rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    border: 2px solid rgba(111, 240, 255, 0.7);
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.18) 0%, rgba(141, 12, 153, 0.04) 38%, rgba(211, 30, 166, 0.12) 100%),
+        linear-gradient(135deg, rgba(15, 35, 95, 0.9) 0%, rgba(91, 27, 151, 0.75) 45%, rgb(94, 8, 105) 100%);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.28),
+        inset 0 -8px 14px rgba(0, 0, 0, 0.22),
+        0 0 10px rgba(0, 217, 255, 0.35),
+        0 0 20px rgba(80, 120, 255, 0.2);
+    overflow: hidden;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease;
+}
+#cv-link::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    border-radius: inherit;
+    background: linear-gradient(180deg, rgba(255,255,255,0.22), rgba(255,255,255,0.03) 45%, transparent 100%);
+    pointer-events: none;
+}
+#cv-link::after {
+    content: "";
+    position: absolute;
+    top: 8%;
+    left: -35%;
+    width: 45%;
+    height: 84%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.28), transparent);
+    transform: skewX(-24deg);
+    pointer-events: none;
+}
+#cv-link:hover,
+#cv-link:focus {
+    color: #ffffff;
+    border-color: rgba(0, 255, 255, 0.95);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.32),
+        inset 0 -8px 14px rgba(0, 0, 0, 0.22),
+        0 0 14px rgba(124, 240, 176, 0.45),
+        0 0 28px rgba(88, 199, 216, 0.32);
+    transform: translateY(-2px);
+}
+#cv-link:active {
+    transform: translateY(0);
+}
+#cv-link span,
+#cv-link {
+    position: relative;
+    z-index: 1;
+}
+
+/* media queries */
+@media only screen and (max-width: 600px) /* xs */
+{
+}
+@media only screen and (min-width: 600px) /* sm */
+{
+}
+@media only screen and (min-width: 768px) /* md */
+{
+}
+@media only screen and (min-width: 992px) /* lg */
+{
+    #cv-link {display: inline-flex;}
+    #navbar #menu-btn {display: none;}
+    #navbar ul {
+        display: inline-flex;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+@media only screen and (min-width: 1200px) /* xl */
+{
+    #navbar ul {gap: 40px;}
+}
+@media only screen and (min-width: 1500px) /* xxl */
+{
+    #navbar ul {gap: 50px;}
+}
+
+/* google fonts */
+.limelight-regular {
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

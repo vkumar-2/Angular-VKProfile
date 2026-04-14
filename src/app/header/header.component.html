@@ -1,0 +1,25 @@
+<header id="header">
+    <div id="logo-container">
+        <a href="#main"><div id="logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/htmx/htmx-original.svg"/></div></a>
+        <a href="#main">VK Profile</a>
+    </div>
+    <div id="navbar">
+        <button id="menu-btn" (click)='onMenuClick()'><i class="fa-solid fa-bars"></i></button>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+        </ul>
+    </div>
+    <a href="assets/Vijay_Kumar_CV.pdf" target="_blank" id="cv-link">Download CV</a>
+</header>
+<nav id="menu" [class.menu-open]='isOpen'>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="assets/Vijay_Kumar_CV.pdf" target="_blank">Download CV</a></li>
+    </ul>
+</nav>
