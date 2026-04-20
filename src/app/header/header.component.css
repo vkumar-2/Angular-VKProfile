@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 
 header {
-    background: linear-gradient(to right, #010016, #05005c);
+    /* Gradient (original) - no transparency: linear-gradient(to right, rgb(1, 0, 22), rgb(5, 0, 92)); */
+    background: linear-gradient(to right, rgb(1, 0, 22, 0.9), rgb(5, 0, 92, 0.9));
     color: white;
     font-size: 20px;
     padding: 15px 0;
@@ -27,17 +28,7 @@ header {
 }
 #logo-container div#logo {
     width: 55px;
-    height: 45px;
-    background:
-        radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.08) 18%, transparent 36%),
-        linear-gradient(135deg, #7cf0b0 0%, #58c7d8 38%, #6f7cff 68%, #c86cff 100%);
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    box-shadow:
-        inset 0 1px 1px rgba(255, 255, 255, 0.22),
-        inset 0 -8px 14px rgba(0, 0, 0, 0.18),
-        0 4px 10px rgba(0, 0, 0, 0.28),
-        0 0 14px rgba(111, 124, 255, 0.22);
+    height: 38px;
 }
 #logo-container div#logo img {
     width: 100%; 
@@ -45,11 +36,13 @@ header {
 }
 #logo-container a {
     font-family: "Audiowide", sans-serif;
+    color: #6ac5d1;
     letter-spacing: 3px;
 }
 #navbar ul {display: none;}
 #navbar ul li {
     list-style-type: none;
+    letter-spacing: 1px;
 }
 #navbar ul li a {
     text-decoration: none;
@@ -78,7 +71,7 @@ header {
     top: 65px;
     left: 0;
     width: 100%;
-    background: linear-gradient(to right, #010016, #05005c);
+    background: linear-gradient(to right, rgb(1, 0, 22, 0.9), rgb(5, 0, 92, 0.9));
     border-top: 1px solid rgba(255, 255, 255, 0.18);
     z-index: 999;
     overflow: hidden;

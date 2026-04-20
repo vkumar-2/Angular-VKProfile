@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 footer {
-    background: linear-gradient(to right, #010016, #05005c);
+    background: linear-gradient(to right, rgb(1, 0, 22), rgb(5, 0, 92));
     color: white;
     font-size: 20px;
     padding: 10px 0;

@@ -1,0 +1,100 @@
+section#skills-container {
+    padding: 0;
+}
+h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.grid-container {
+    padding: 0 1rem;
+    margin-bottom: 40px;
+}
+.grid-container .skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 60px);
+    justify-content: center;
+    gap: 5px;
+}
+.grid-container .skill-grid div {
+    height: 60px;
+    width: 60px;
+}
+.grid-container .skill-grid .skill-item {
+    position: relative;
+    overflow: visible;
+}
+.grid-container .skill-grid .skill-item img {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+.grid-container .skill-grid .skill-item .skill-label {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    bottom: -48px;
+    transform: translateX(-50%) translateY(8px);
+    margin: 0;
+    padding: 6px 10px;
+    min-width: 70px;
+    max-width: 120px;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(8, 18, 30, 0.82);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 0.8rem;
+    letter-spacing: 0.3px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s ease;
+    pointer-events: none;
+}
+.grid-container .skill-grid .skill-item:hover .skill-label {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+.grid-container .skill-grid .skill-item:hover img {
+    transform: scale(1.06);
+    filter: brightness(0.72);
+}
+
+/* media queries */
+@media only screen and (max-width: 600px) /* xs */
+{
+}
+@media only screen and (min-width: 600px) /* sm */
+{
+}
+@media only screen and (min-width: 768px) /* md */
+{
+}
+@media only screen and (min-width: 992px) /* lg */
+{
+}
+@media only screen and (min-width: 1200px) /* xl */
+{
+    h2, h3 {text-align: left;}
+    .grid-container {
+        padding: 0;
+    }
+    .grid-container .skill-grid {justify-content: start;}
+}
+@media only screen and (min-width: 1500px) /* xxl */
+{
+}

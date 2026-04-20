@@ -1,0 +1,110 @@
+section#intro-container {
+    padding: 0 30px;
+}
+section#intro-container div#intro-subcontainer {
+    display: block;
+}
+section#intro-container div.img-container {
+    height: 200px;
+    width: 200px;
+    margin: 1rem auto;
+    border: 4px solid white;
+    border-radius: 200px;
+}
+section#intro-container div.img-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: 200px;
+}
+section#intro-container div#description-box {text-align: center;}
+section#intro-container div#description-box p {
+    font-size: 20px;
+    padding: 5px;
+}
+section#intro-container div#description-box p#statement {font-size: 17px;}
+section#intro-container div#description-box h1 {padding: 5px;}
+section#intro-container div#description-box h2 {
+    font-size: 17px;
+    color: rgb(102, 37, 0);
+    text-shadow: 0 1px 1px rgb(255, 94, 0);
+    padding: 5px;
+}
+section#intro-container div#description-box ul {
+    display: inline-flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 5px;
+}
+section#intro-container div#description-box ul li {
+    list-style-type: none;
+    font-size: 27px;
+}
+section#intro-container div#description-box ul li a {color: #2b2b2b;}
+section#intro-container div#description-box ul li a:hover,
+section#intro-container div#description-box ul li a:focus {
+    color: grey;
+    transition: color 0.3s ease;
+}
+
+/* utils */
+.title {
+    display: inline-block;
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: 0.02em;
+    margin: 0 0 0.35rem 0;
+    text-shadow: 2px 2px 1px #5299bd;
+    color: #062e3f;
+    position: relative;
+    text-transform: capitalize;
+}
+.title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.35rem;
+    width: 72%;
+    height: 0.28rem;
+}
+
+/* media queries */
+@media only screen and (max-width: 600px) /* xs */
+{
+}
+@media only screen and (min-width: 600px) /* sm */
+{
+    section#intro-container div#description-box h2 {font-size: 20px;}
+    .title::after {
+        width: 55%;
+    }
+}
+@media only screen and (min-width: 768px) /* md */
+{
+}
+@media only screen and (min-width: 992px) /* lg */
+{
+    section#intro-container div#description-box h2 {font-size: 25px;}
+}
+@media only screen and (min-width: 1200px) /* xl */
+{
+    section#intro-container div#intro-subcontainer {
+        padding: 20px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+    section#intro-container div#description-box {text-align: left;}
+    section#intro-container div#img-box {}
+    section#intro-container div#description-box {}
+}
+@media only screen and (min-width: 1500px) /* xxl */
+{
+}
+
+/* temporary classes */
+/* section#intro-container div#intro-subcontainer div {border: 1px dashed black;} */
+.xray-1 {border: 1px solid white;}
+.xray-2 {border: 2px solid white;}
+.xray-3 {border: 3px solid white;}

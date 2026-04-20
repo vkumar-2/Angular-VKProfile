@@ -17,5 +17,3 @@ import {FooterComponent} from './footer/footer.component';
 export class AppComponent {
   title = 'Profile';
 }
-
-// <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg" alt="Angular" style="height: 100px;"/>

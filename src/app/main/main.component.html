@@ -1,3 +1,17 @@
-<main id="main">
-    Main
+<main id="main" class="canvas-bg">
+    <div class="space"></div>
+    <app-card-intro class="m"></app-card-intro>
+    <div id="components-card">
+        <ng-container *ngIf="!isXL; else xlLayout">
+            <app-card-skills></app-card-skills>
+            <app-card-experience></app-card-experience>
+        </ng-container>
+        <ng-template #xlLayout>
+            <app-card-experience></app-card-experience>
+            <app-card-skills></app-card-skills>
+        </ng-template>
+        <app-card-projects></app-card-projects>
+        <app-card-education></app-card-education>
+        <app-card-certifications></app-card-certifications>
+    </div>
 </main>

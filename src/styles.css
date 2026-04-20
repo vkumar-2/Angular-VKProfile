@@ -24,9 +24,6 @@ app-footer {
     display: block;
     width: 100%;
 }
-app-header {}
-app-main {}
-app-footer {}
 
 /* media queries */
 @media only screen and (max-width: 600px) /* xs */
@@ -47,6 +44,30 @@ app-footer {}
 @media only screen and (min-width: 1500px) /* xxl */
 {
 }
+
+/* classes */
+.auto-width {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+.card {
+    border: 1px solid rgba(48, 31, 76, 0.55);
+    border-radius: 20px;
+    background:
+        radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.22), transparent 22%),
+        radial-gradient(circle at 82% 24%, rgba(255, 214, 247, 0.18), transparent 20%),
+        linear-gradient(225deg, #66a193 7%, #d6f1e7 23%, #d6f1e7 73%, #88b3a9 93%);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.28),
+        0 10px 24px rgba(49, 26, 74, 0.18),
+        0 2px 6px rgba(49, 26, 74, 0.12);
+}
+
+
+
+
+.m {margin: 1rem;}
+.p {padding: 1rem;}
 
 /* xray lines */
 .xray-1 {border: 1px dashed black;}
