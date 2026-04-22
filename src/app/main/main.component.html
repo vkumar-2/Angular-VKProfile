@@ -1,17 +1,26 @@
-<main id="main" class="canvas-bg">
+<main id="main" class="canvas">
     <div class="space"></div>
     <app-card-intro class="m"></app-card-intro>
-    <div id="components-card">
-        <ng-container *ngIf="!isXL; else xlLayout">
+    <ng-container *ngIf="!isXL; else xlLayout">
+        <div id="components-card">
             <app-card-skills></app-card-skills>
             <app-card-experience></app-card-experience>
-        </ng-container>
-        <ng-template #xlLayout>
-            <app-card-experience></app-card-experience>
-            <app-card-skills></app-card-skills>
-        </ng-template>
-        <app-card-projects></app-card-projects>
-        <app-card-education></app-card-education>
-        <app-card-certifications></app-card-certifications>
-    </div>
+            <app-card-projects></app-card-projects>
+            <app-card-education></app-card-education>
+            <app-card-certifications></app-card-certifications>
+        </div>
+    </ng-container>
+    <ng-template #xlLayout>
+        <div id="components-card" class="xl-columns">
+            <div class="left-column">
+                <app-card-experience></app-card-experience>
+                <app-card-projects></app-card-projects>
+                <app-card-certifications></app-card-certifications>
+            </div>
+            <div class="right-column">
+                <app-card-skills></app-card-skills>
+                <app-card-education></app-card-education>
+            </div>
+        </div>
+    </ng-template>
 </main>

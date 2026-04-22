@@ -3,8 +3,8 @@
     flex: 1;
 }
 main {
-    min-height: 100vh; 
-    padding-bottom: 100px;
+    min-height: 100vh;
+    padding-bottom: 20px;
 }
 #components-card {
     display: flex;
@@ -18,7 +18,10 @@ main {
 #components-card app-card-projects,
 #components-card app-card-education,
 #components-card app-card-certifications {
+    display: block;
+    width: 100%;
     margin: 0;
+    min-width: 0;
 }
 
 /* media queries */
@@ -36,23 +39,21 @@ main {
 }
 @media only screen and (min-width: 1200px) /* xl */
 {
-    #components-card {
+    #components-card.xl-columns {
         display: grid;
-        width: min(1300px, calc(100% - 60px));
         grid-template-columns: 63% 33%;
         gap: 4%;
-        margin: 20px auto;
+        align-items: start;
     }
-    #components-card app-card-experience,
-    #components-card app-card-skills,
-    #components-card app-card-projects,
-    #components-card app-card-education,
-    #components-card app-card-certifications {
-        width: 100%;
-        margin: 0;
+    .left-column,
+    .right-column {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
         min-width: 0;
     }
 }
+
 @media only screen and (min-width: 1500px) /* xxl */
 {
 }
@@ -85,6 +86,18 @@ main {
     background-size: cover;
     background-position: center;
 }
+/* fixed background */
+.canvas {
+    background-image: url('../../assets/background_blue.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    flex: 1;
+}
 
 /* misc */
-.space {height: 90px;}
+.space {
+    height: 90px;
+}
