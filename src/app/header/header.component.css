@@ -200,17 +200,16 @@ header {
 }
 @media only screen and (min-width: 992px) /* lg */
 {
+}
+@media only screen and (min-width: 1200px) /* xl */
+{
     #cv-link {display: inline-flex;}
     #navbar #menu-btn {display: none;}
     #navbar ul {
         display: inline-flex;
         justify-content: center;
-        gap: 30px;
+        gap: 40px;
     }
-}
-@media only screen and (min-width: 1200px) /* xl */
-{
-    #navbar ul {gap: 40px;}
 }
 @media only screen and (min-width: 1500px) /* xxl */
 {

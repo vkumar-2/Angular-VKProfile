@@ -14,7 +14,7 @@ export class CardEducationComponent
   [
     {
       id: 1, 
-      institute: 'IT online Learning Academy',
+      institute: 'ITOL Academy',
       qualification: 'BCS Tech10 Coding Diploma',
       startDate: 'March 2025',
       endDate: 'Present',
