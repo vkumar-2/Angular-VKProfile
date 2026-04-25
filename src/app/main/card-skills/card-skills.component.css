@@ -8,6 +8,10 @@ h2, h3 {
     text-align: center;
     margin-bottom: 20px;
 }
+h3 {
+    color: #e6ff5b;
+    text-shadow: 2px 2px 1px #000000;
+}
 .grid-container {
     padding: 0 1rem;
     margin-bottom: 40px;
@@ -94,7 +98,7 @@ h2, h3 {
 {
     h2, h3 {text-align: left;}
     section#skills-container #skills-card {padding: 1rem;}
-
+    .span-icon {margin-right: 7px;}
     .grid-container {padding: 0;}
     .grid-container .skill-grid {justify-content: start;}
 }

@@ -6,11 +6,36 @@ h2 {
     margin-bottom: 20px;
 }
 div.projects-div {
-    background: linear-gradient(to right,  #ffdac2, #ffe4b1a2);
-    border: 1px ridge rgb(65, 65, 65);
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+        200deg,
+        rgba(205, 40, 117, 0.2) 0%,
+        rgba(255, 0, 0, 0.15) 42%,
+        rgba(205, 40, 117, 0.2) 100%
+    );
+    border: 1px solid rgba(135, 225, 255, 0.24);
     border-radius: 15px;
     padding: 1rem;
     margin: 0;
+    margin-bottom: 1.5rem;
+    backdrop-filter: blur(12px) saturate(135%);
+    -webkit-backdrop-filter: blur(12px) saturate(135%);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.16),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.05),
+        0 10px 24px rgba(10, 20, 75, 0.34),
+        0 0 20px rgba(0, 195, 255, 0.10);
+}
+div.projects-div:last-child {margin-bottom: 1rem;}
+div.projects-div::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -25%;
+    width: 55%;
+    height: 100%;
+    pointer-events: none;
 }
 section.pr-title-container {
     display: block; 
@@ -26,7 +51,7 @@ section.pr-title-container {
 }
 .pr-list-container ul li, .pr-title, .pr-date {font-size: 18px;}
 .pr-list-container ul li {margin: 15px 20px;}
-.pr-date {margin-top: 5px; font-weight: bold;}
+.pr-date {margin-top: 5px;}
 
 /* media queries */
 @media only screen and (max-width: 600px) /* xs */
@@ -45,12 +70,13 @@ section.pr-title-container {
 {
     h2 {
         text-align: left;
-        margin: 0 0 1rem 2.95rem;
+        margin: 0 0 1rem 0;
     }
     section.pr-title-container {
         display: flex;
         justify-content: space-between;
     }
+    .span-icon {margin-right: 7px;}
     .pr-title, .pr-date {font-size: 20px;}
     .pr-list-container ul li {font-size: 18px}
     .pr-date {margin-top: 0; font-weight: 500;}
@@ -60,8 +86,22 @@ section.pr-title-container {
 }
 
 /* internal classes */
-.pr-title {text-shadow: 1px 1px 1px #a2a4ff;}
-.pr-date {text-shadow: 1px 1px 1px #d2a2ff;}
+.pr-title {
+    color: rgb(255, 123, 47);
+    text-shadow: 0 1px 1px rgb(0, 0, 0);
+}
+.pr-title a {
+    color: rgb(0, 255, 13);
+    text-decoration: none;
+}
+.pr-title a:hover, .pr-title a:focus {
+    color: rgb(0, 167, 14);
+    transition: color 0.3s ease;
+}
+.pr-date {
+    color: #63caca;
+    text-shadow: 0 1px 1px rgb(0, 0, 0);
+}
 .strong {font-weight: bold;}
 .m-t {margin-top: 1rem;}
 .framework-tag {
@@ -73,6 +113,6 @@ section.pr-title-container {
     color: #ffffff;
     letter-spacing: 1px;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
-    background: linear-gradient(15deg, #5c004d 0%, #26006d 100%);
+    background: linear-gradient(15deg, rgba(65, 70, 0, 0.7) 0%, rgba(0, 28, 70, 0.7) 100%);
     border: 1px solid rgb(59, 47, 59);
 }

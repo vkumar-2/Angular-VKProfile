@@ -1,5 +1,10 @@
 <section id="certificates-container">
     <div class="card p">
-        Certifications
+        <h2 class="heading"><span class="span-icon"><i class="fa-solid fa-check"></i></span> Certifications</h2>
+        <div class="certificates-box" *ngFor="let certificate of certificates">
+            <h3>{{certificate.institute}}</h3>
+            <h4>{{certificate.name}}</h4>
+            <h5>{{certificate.date}}</h5>
+        </div>
     </div>
 </section>

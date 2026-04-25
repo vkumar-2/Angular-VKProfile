@@ -1,5 +1,22 @@
 <section id="education-container">
     <div class="card p">
-        Education
+        <h2 class="heading"><span class="span-icon"><i class="fa-solid fa-book-open"></i></span> Education</h2>
+        <div class="education-box" *ngFor="let e of education1">
+            <h3>{{e.institute}}</h3>
+            <h4>{{e.qualification}}</h4>
+            <h5>{{e.startDate}} - {{e.endDate}}</h5>
+        </div>
+        <div class="education-box" *ngFor="let e of education2">
+            <h3>{{e.institute}}</h3>
+            <h4>{{e.qualification}}</h4>
+            <h5>{{e.startDate}} - {{e.endDate}}</h5>
+        </div>
+        <div class="education-box" *ngFor="let e of education3">
+            <h3>{{e.institute}}</h3>
+            <div class="sub-container" *ngFor="let q of e.qualification; let i = index">
+                <h4>{{q}}</h4>
+                <h5>{{e.startDate[i]}} - {{e.endDate[i]}}</h5>
+            </div>
+        </div>
     </div>
 </section>

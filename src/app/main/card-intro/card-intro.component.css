@@ -25,8 +25,8 @@ section#intro-container div#description-box p#statement {font-size: 17px;}
 section#intro-container div#description-box h1 {padding: 5px;}
 section#intro-container div#description-box h2 {
     font-size: 17px;
-    color: rgb(102, 37, 0);
-    text-shadow: 0 1px 1px rgb(255, 94, 0);
+    color: rgb(255, 123, 47);
+    text-shadow: 0 1px 1px rgb(0, 0, 0);
     padding: 5px;
 }
 section#intro-container div#description-box ul {
@@ -39,10 +39,10 @@ section#intro-container div#description-box ul li {
     list-style-type: none;
     font-size: 27px;
 }
-section#intro-container div#description-box ul li a {color: #2b2b2b;}
+section#intro-container div#description-box ul li a {color: #818181;}
 section#intro-container div#description-box ul li a:hover,
 section#intro-container div#description-box ul li a:focus {
-    color: grey;
+    color: #2c2c2c;
     transition: color 0.3s ease;
 }
 
@@ -54,8 +54,8 @@ section#intro-container div#description-box ul li a:focus {
     line-height: 1.05;
     letter-spacing: 0.02em;
     margin: 0 0 0.35rem 0;
-    text-shadow: 2px 2px 1px #5299bd;
-    color: #062e3f;
+    color: #9ae1ff;
+    text-shadow: 2px 2px 1px #000000;
     position: relative;
     text-transform: capitalize;
 }

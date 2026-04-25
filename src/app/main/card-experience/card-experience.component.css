@@ -68,8 +68,9 @@ h2 {
 {
     h2 {
         text-align: left;
-        margin: 0 0 1rem 2.95rem;
+        margin: 0 0 1rem 0;
     }
+    .span-icon {margin-right: 7px;}
 }
 @media only screen and (min-width: 1500px) /* xxl */
 {

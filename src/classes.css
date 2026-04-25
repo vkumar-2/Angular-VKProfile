@@ -1,20 +1,22 @@
 .heading {
-    color: #062e3f;
-    text-shadow: 2px 2px 1px #5299bd;
+    color: #9ae1ff;
+    text-shadow: 2px 2px 1px #000000;
     font-size: 25px;
     font-weight: 800;
     letter-spacing: 0.02em;
 }
 .subheading {
-    color: rgb(102, 37, 0);
-    text-shadow: 0 1px 1px rgb(255, 94, 0);
+    color: rgb(255, 123, 47);
+    text-shadow: 0 1px 1px rgb(0, 0, 0);
 }
 .date {
     margin: 0 0 0.45rem 0;
     font-weight: 700;
-    color: #00244d;
+    color: #54aa86;
+    text-shadow: 0 1px 1px rgb(0, 0, 0);
 }
 .company {
     font-weight: 700;
-    color: #4d0d72;
+    color: #ff30ba;
+    text-shadow: 0 1px 1px rgb(0, 0, 0);
 }

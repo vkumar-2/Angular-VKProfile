@@ -7,6 +7,30 @@
 section#certificates-container {
     padding: 0;
 }
+h2, h3, h4, h5 {text-align: center;}
+.certificates-box {
+    border-bottom: 2px solid rgba(138, 138, 138, 0.3); 
+    padding-bottom: 1rem;
+}
+.certificates-box:last-child {
+    border-bottom: none; 
+    padding-bottom: 0;
+}
+.certificates-box h3 {
+    color: #c4c4c4;
+    font-size: 17px;
+    text-shadow: 2px 2px 1px #000000;
+    margin: 10px 0;
+}
+.certificates-box h4 {
+    font-size: 17px;
+    font-weight: 500;
+}
+.certificates-box h5 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #62ff84;
+}
 
 /* media queries */
 @media only screen and (max-width: 600px) /* xs */
@@ -23,6 +47,8 @@ section#certificates-container {
 }
 @media only screen and (min-width: 1200px) /* xl */
 {
+    h2, h3, h4, h5 {text-align: left;}
+    .span-icon {margin-right: 7px;}
 }
 @media only screen and (min-width: 1500px) /* xxl */
 {
